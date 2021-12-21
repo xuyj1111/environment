@@ -23,6 +23,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation "org.springframework.boot:spring-boot-starter-data-jdbc"
+    implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
 
     implementation 'mysql:mysql-connector-java:5.1.47'
     implementation 'org.projectlombok:lombok'
