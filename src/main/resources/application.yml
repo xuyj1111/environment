@@ -1,7 +1,7 @@
 spring:
   dataSource:
     username: root
-    password: root
+    password: 123456
     url: jdbc:mysql://127.0.0.1:3306/xu?useUnicode=yes&characterEncoding=UTF-8&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8&zeroDateTimeBehavior=convertToNull&useSSL=false
     type: com.alibaba.druid.pool.DruidDataSource
   jpa:
