@@ -1,0 +1,10 @@
+jar {
+	baseName PROJECT_NAME
+	version PROJECT_VERSION
+}
+version PROJECT_VERSION
+
+dependencies {
+	implementation "org.springframework.data:spring-data-redis"
+	implementation "redis.clients:jedis"
+}
