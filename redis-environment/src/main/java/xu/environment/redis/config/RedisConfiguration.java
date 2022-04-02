@@ -1,4 +1,4 @@
-package xu.environment.redis;
+package xu.environment.redis.config;
 
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,7 +14,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 import redis.clients.jedis.JedisPoolConfig;
 
 @Configuration
-public class RedisBeanFactory {
+public class RedisConfiguration {
 
     @Value("${spring.redis.host}")
     private String host;

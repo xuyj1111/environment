@@ -1,2 +1,3 @@
 rootProject.name = 'environment'
 include 'redis-environment'
+include 'jdbc-environment'

@@ -1,0 +1,10 @@
+jar {
+	baseName PROJECT_NAME
+	version PROJECT_VERSION
+}
+version PROJECT_VERSION
+
+dependencies {
+	implementation "org.springframework.boot:spring-boot-starter-data-jdbc"
+	implementation 'mysql:mysql-connector-java:5.1.47'
+}
