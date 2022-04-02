@@ -11,7 +11,7 @@ spring:
         max-idle: 8
         min-idle: 0
 server:
-  port: 8120
+  port: 8130
   tomcat:
     uri-encoding: UTF-8
     max-connections: 2000

@@ -4,7 +4,7 @@ spring:
     password: root
     url: jdbc:mysql://127.0.0.1:3306/xu?useUnicode=yes&characterEncoding=UTF-8&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8&zeroDateTimeBehavior=convertToNull&useSSL=false
 server:
-  port: 8120
+  port: 8130
   tomcat:
     uri-encoding: UTF-8
     max-connections: 2000
