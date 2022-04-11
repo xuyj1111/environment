@@ -7,4 +7,5 @@ version PROJECT_VERSION
 dependencies {
 	implementation "org.springframework.data:spring-data-redis"
 	implementation "redis.clients:jedis"
+	implementation 'org.redisson:redisson:3.16.8'
 }

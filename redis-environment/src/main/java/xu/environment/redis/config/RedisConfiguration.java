@@ -1,6 +1,10 @@
 package xu.environment.redis.config;
 
 import org.apache.logging.log4j.util.Strings;
+import org.junit.platform.commons.util.StringUtils;
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
+import org.redisson.config.Config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -65,4 +69,18 @@ public class RedisConfiguration {
         return redisTemplate;
     }
 
+    /** 
+     * @Description: 单例模式
+     */ 
+    @Bean
+    public RedissonClient redissonClient() {
+        Config config = new Config();
+        String url = "redis://" + this.host + ":" + this.port;
+        if (StringUtils.isBlank(this.password)) {
+            config.useSingleServer().setAddress(url).setDatabase(this.database);
+        } else {
+            config.useSingleServer().setAddress(url).setDatabase(this.database).setPassword(this.password);
+        }
+        return Redisson.create(config);
+    }
 }

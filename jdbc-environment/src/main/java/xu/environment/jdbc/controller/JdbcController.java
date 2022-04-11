@@ -10,8 +10,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/test")
-public class TestController {
+@RequestMapping("/jdbc")
+public class JdbcController {
 
     @Autowired
     private NamedParameterJdbcTemplate jdbcTemplate;
